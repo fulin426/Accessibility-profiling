@@ -90,19 +90,19 @@ function generateQuestionElement(item) {
 		</div>
 		<div class="container">
 		<label class="answers">
-			<input type="radio" for="answer-1" name="answer" value="${item[questionNumber].answer[0]}"required/>
+			<input type="radio" for="answer-1" aria-labelledby="answer" value="${item[questionNumber].answer[0]}"required/>
 			<span>${item[questionNumber].answer[0]}</span>
 		</label>
 		<label class="answers">
-		    <input type="radio" for="answer-2" name="answer" value="${item[questionNumber].answer[1]}">
+		    <input type="radio" for="answer-2" aria-labelledby="answer" value="${item[questionNumber].answer[1]}">
 		    <span>${item[questionNumber].answer[1]}</span>
 		</label>
 		<label class="answers">
-		    <input type="radio" for="answer-3" name="answer" value="${item[questionNumber].answer[2]}">
+		    <input type="radio" for="answer-3" aria-labelledby="answer" value="${item[questionNumber].answer[2]}">
 		    <span>${item[questionNumber].answer[2]}</span>
 		</label>
 		<label class="answers">
-		    <input type="radio" for="answer-4" name="answer" value="${item[questionNumber].answer[3]}">
+		    <input type="radio" for="answer-4" aria-labelledby="answer" value="${item[questionNumber].answer[3]}">
 		    <span>${item[questionNumber].answer[3]}</span>
 		</label>
 		<div class="button-holder">
