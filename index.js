@@ -84,26 +84,27 @@ function generateStartPage() {
 
 // Generate the html for question
 function generateQuestionElement(item) {
-	return`		<div class="question-current">
-			<p class="question-display">${item[questionNumber].question}</p>
+	return`		
+	<div class="question-current">
+			<legend class="question-display">${item[questionNumber].question}</legend>
 		</div>
 		<div class="container">
-		  <label class="answers">
-		 	  <input type="radio" for="answer-1" name="answer" value="${item[questionNumber].answer[0]}"required/>
-		 		<span>${item[questionNumber].answer[0]}</span>
-		 	</label>
-			<label class="answers">
+		<label class="answers">
+			<input type="radio" for="answer-1" name="answer" value="${item[questionNumber].answer[0]}"required/>
+			<span>${item[questionNumber].answer[0]}</span>
+		</label>
+		<label class="answers">
 		    <input type="radio" for="answer-2" name="answer" value="${item[questionNumber].answer[1]}">
 		    <span>${item[questionNumber].answer[1]}</span>
-		  </label>
-			<label class="answers">
+		</label>
+		<label class="answers">
 		    <input type="radio" for="answer-3" name="answer" value="${item[questionNumber].answer[2]}">
 		    <span>${item[questionNumber].answer[2]}</span>
-		  </label>
-			<label class="answers">
+		</label>
+		<label class="answers">
 		    <input type="radio" for="answer-4" name="answer" value="${item[questionNumber].answer[3]}">
 		    <span>${item[questionNumber].answer[3]}</span>
-		  </label>
+		</label>
 		<div class="button-holder">
 			<button type="submit" class="button-submit" role="button">Submit</button>
 		</div>
@@ -231,10 +232,10 @@ function restartQuiz() {
 //Effects for general buttons
 function buttonEffects() {
 	$('.question-form').on('mouseenter', 'button', function() {
-		$(this).css({background: '#ad3d2e'});
+		$(this).css({background: '#dc5e4d'});
 	});
 	$('.question-form').on('mouseleave', 'button', function() {
-		$(this).css({background: '#dc5e4d'});
+		$(this).css({background: '#ad3d2e'});
 	});
 }
 
